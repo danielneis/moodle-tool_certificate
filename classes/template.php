@@ -816,7 +816,13 @@ class template {
         $fullmessage = get_string(
             'notificationmsgcertificateissued',
             'tool_certificate',
-            ['fullname' => $userfullname, 'url' => $mycertificatesurl->out(false)]
+            [
+                'fullname' => $userfullname,
+                'url' => $mycertificatesurl->out(false),
+                'facebooklogourl' => (new moodle_url('/admin/tool/certificate/pix/facebook-logo.png'))->out(false),
+                'linkedinlogourl' => (new moodle_url('/admin/tool/certificate/pix/linkedin-logo.png'))->out(false),
+                'xlogourl' => (new moodle_url('/admin/tool/certificate/pix/x-logo.png'))->out(false),
+            ]
         );
 
         $message = new message();
