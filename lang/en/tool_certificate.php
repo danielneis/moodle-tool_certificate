@@ -148,9 +148,9 @@ $string['notificationmsgcertificateissued'] = 'Hi {$a->fullname},<br /><br />You
 <a href="{$a->url}">My Certificates</a>
 <br/>
 <p>Share on social networks:</p>
-<a style="margin-right: 1em;" href="https://www.facebook.com/sharer/sharer.php?u={$a->url}" title="Share on Facebook"><img width="48" height="48" src="{$a->facebooklogourl}" alt="Facebook logo"></a>
-<a style="margin-right: 1em;" href="https://www.linkedin.com/shareArticle?mini=true&url={$a->url}" title="Share on LinkedIn"><img  width="48" height="48" src="{$a->linkedinlogourl}" alt="LinkedIn logo"></a>
-<a style="margin-right: 1em;" href="https://x.com/share?url={$a->url}" title="Share on X"><img width="48" height="48" src="{$a->xlogourl}" alt="X logo"></a>';
+<a style="margin-right: 1em;" href="https://www.facebook.com/sharer/sharer.php?u={$a->issueurl}" title="Share on Facebook"><img width="48" height="48" src="{$a->facebooklogourl}" alt="Facebook logo"></a>
+<a style="margin-right: 1em;" href="https://www.linkedin.com/shareArticle?mini=true&url={$a->issueurl}" title="Share on LinkedIn"><img  width="48" height="48" src="{$a->linkedinlogourl}" alt="LinkedIn logo"></a>
+<a href="https://x.com/share?url={$a->issueurl}" title="Share on X"><img width="48" height="48" src="{$a->xlogourl}" alt="X logo"></a>';
 $string['notificationsubjectcertificateissued'] = 'Your certificate is available!';
 $string['notverified'] = 'Not verified';
 $string['numberofpages'] = 'Number of pages';

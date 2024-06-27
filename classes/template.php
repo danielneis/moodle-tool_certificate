@@ -812,6 +812,7 @@ class template {
         $user = core_user::get_user($issue->userid);
         $userfullname = fullname($user, true);
         $mycertificatesurl = new moodle_url('/admin/tool/certificate/my.php');
+        $issueurl = new moodle_url('/admin/tool/certificate/view.php', ['code' => $issue->code]);
         $subject = get_string('notificationsubjectcertificateissued', 'tool_certificate');
         $fullmessage = get_string(
             'notificationmsgcertificateissued',
@@ -819,6 +820,7 @@ class template {
             [
                 'fullname' => $userfullname,
                 'url' => $mycertificatesurl->out(false),
+                'issueurl' => $issueurl->out(false),
                 'facebooklogourl' => (new moodle_url('/admin/tool/certificate/pix/facebook-logo.png'))->out(false),
                 'linkedinlogourl' => (new moodle_url('/admin/tool/certificate/pix/linkedin-logo.png'))->out(false),
                 'xlogourl' => (new moodle_url('/admin/tool/certificate/pix/x-logo.png'))->out(false),
