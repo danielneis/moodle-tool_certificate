@@ -74,6 +74,11 @@ if ($hassiteconfig) {
         new lang_string('issuelangdesc', 'tool_certificate'),
         false
     ));
+    $settings->add(new admin_setting_configcheckbox('tool_certificate/displaysharepage',
+        new lang_string('displaysharepage', 'tool_certificate'),
+        new lang_string('displaysharepagedesc', 'tool_certificate'),
+        false
+    ));
     $settings->add(new admin_setting_configselect('tool_certificate/show_shareonlinkedin',
         new lang_string('show_shareonlinkedin', 'tool_certificate'),
         new lang_string('show_shareonlinkedin_desc', 'tool_certificate'),
